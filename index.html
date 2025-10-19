@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carlos Sebastián Eugenio Reyes</title>
+    
+    <style>
+        :root {
+            --main-bg: #f0f4f8;
+            --primary-color: #264653;
+            --accent-color: #2a9d8f;
+            --text-color: #1d1d1d;
+            --white: #ffffff;
+            --shadow: rgba(0, 0, 0, 0.05);
+        }
+    
+        html {
+            scroll-behavior: smooth;
+        }
+    
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: var(--main-bg);
+            color: var(--text-color);
+        }
+    
+        nav {
+            background: var(--white);
+            box-shadow: 0 2px 5px var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+    
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            padding: 1em 0;
+            list-style: none;
+            margin: 0;
+        }
+    
+        .nav-menu li {
+            margin: 0 20px;
+        }
+    
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+    
+        .nav-menu a:hover {
+            color: var(--accent-color);
+        }
+    
+        .content {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+    
+        section {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px var(--shadow);
+        }
+    
+        h1,
+        h2 {
+            color: var(--primary-color);
+            text-align: center;
+        }
+    
+        .center-img {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+    
+        .center-img img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid var(--accent-color);
+        }
+    
+        .project {
+            margin-bottom: 30px;
+        }
+    
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+            align-items: center;
+            gap: 2rem;
+            overflow: visible;
+        }
+    
+        .project-img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transform-origin: center center;
+            position: relative;
+            z-index: 1;
+            margin: 0 auto;
+            display: block;
+        }
+    
+        .project-img:hover {
+            transform: scale(1.2);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+            z-index: 10;
+        }
+    
+        .project-container:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    
+        .contacto-icons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+    
+        .contacto-icons img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .carousel-images img,
+        .carousel-images video {
+            width: 100%;
+            height: 400px;
+            flex-shrink: 0;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        
+        .carousel-images img:hover,
+        .edu-img:hover {
+            transform: scale(.75);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+
+        <section id="home">
+            <h1>👋 Hi, I’m Carlos Sebastián Eugenio Reyes</h1>
+            <div class="center-img">
+                <img src="img/perfil.jpeg" alt="Profile picture">
+            </div>
+            <p style="text-align: center;">
+                Biomedical Engineering student passionate about technology, medical electronics, and machine learning.
+            </p>
+        </section>
+
+
+        <section id="projects">
+            <h2>🧪 Projects</h2>
+            <p>Explore a selection of projects carried out in the areas of bioengineering, robotics, signal processing, and
+                device design. Each one combines theory and practice to solve real-world problems through technology.
+            </p>
+        
+            <style>
+                .project-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 2rem 0;
+                    align-items: center;
+                    gap: 2rem;
+                }
+            
+                .carousel {
+                    max-width: 400px;
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 1rem;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                }
+            
+                .carousel.large {
+                    max-width: 550px;
+                    height: 400px;
+                }
+            
+                .carousel-images {
+                    display: flex;
+                    transition: transform 0.5s ease;
+                }
+            
+                .carousel-images img {
+                    width: 100%;
+                    flex-shrink: 0;
+                    object-fit: cover;
+                }
+                
+                .carousel-images img:hover {
+                    transform: scale(.75);
+                    transform-origin: center center;
+                    z-index: 1;
+                  }
+            
+                  .carousel-controls {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    display: flex;
+                    justify-content: center;
+                    gap: 0.7rem;
+                    width: auto;
+                  }
+                
+                  /*.carousel-controls {
+                    position: absolute;
+                    top: 50%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    transform: translateY(-50%);
+                    padding: 0 1rem;
+                }*/
+
+                .carousel-controls {
+                    justify-content: flex-start;
+                    gap: 0.7rem;
+                  }
+                  
+                  .carousel-controls .next {
+                    order: -1;
+                    margin-right: 0;
+                  }
+            
+                .carousel-controls button {
+                    background-color: rgba(255, 255, 255, 0.7);
+                    border: none;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+                            
+                .project-info {
+                    flex: 1;
+                    min-width: 300px;
+                }
+            
+                .project-container:nth-child(even) {
+                    flex-direction: row-reverse;
+                }    
+            </style>
+            
+            <script>
+                function initCarousels() {
+                    document.querySelectorAll('.carousel').forEach(carousel => {
+                        const images = carousel.querySelector('.carousel-images');
+                        const total = images.children.length;
+                        let index = 0;
+
+                        const prevBtn = carousel.querySelector('.prev');
+                        const nextBtn = carousel.querySelector('.next');
+
+                        function updateCarousel() {
+                            images.style.transform = `translateX(-${index * 100}%)`;
+                        }
+
+                        if (prevBtn && nextBtn) {
+                            prevBtn.addEventListener('click', () => {
+                                index = (index - 1 + total) % total;
+                                updateCarousel();
+                            });
+
+                            nextBtn.addEventListener('click', () => {
+                                index = (index + 1) % total;
+                                updateCarousel();
+                            });
+                        }
+                        setInterval(() => {
+                            index = (index + 1) % total;
+                            updateCarousel();
+                        }, 5000);
+                    });
+                }
+                window.addEventListener('load', initCarousels);
+               </script>
+
+            <div class="project-container">
+                <div class="project-info">
+                    <h3>Exoskeleton Prototype</h3>
+                    <p><strong>Skills:</strong> Python, Strength of Materials, Servo Motor Programming</p>
+                    <p><strong>Main Objective:</strong> To design and develop a prototype exoskeleton aimed at simulating human gait.
+                    </p>
+                </div>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="img/Bipedo_1.jpeg" alt="Exoskeleton 1">
+                        <img src="img/Bipedo_2.jpeg" alt="Exoskeleton 2">
+                        <video autoplay muted loop>
+                            <source src="img/bipedo_video2.mp4" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de video.
+                        </video>
+                        <video autoplay muted loop>
+                            <source src="img/bipedo_video1.mp4" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de video.
+                        </video>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="prev">></button>
+                        <button class="next"><</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="project-info">
+                    <h3>Desarrollo de código en software matemático para análisis de electrocardiógrafo con sensor AD8232</h3>
+                    <p><strong>Habilidades:</strong> Filtros, Desviación estándar, Análisis comparativo</p>
+                    <p><strong>Objetivo:</strong> Desarrollar un código que permita el filtrado y análisis de una señal
+                        eléctrica del corazón según la NOM PROY-NOM-241-SSA1-20184.</p>
+                </div>
+                <img src="img/Comparativa_senales.png" alt="ECG post-COVID" class="project-img large-img">
+            </div>
+        
+            <div class="project-container">
+                <div class="project-info">
+                    <h3>Análisis de señales ECG usando Machine Learning</h3>
+                    <p><strong>Habilidades:</strong> Python, Filtros, Análisis de datos</p>
+                    <p><strong>Objetivo:</strong> Filtrar y analizar señales cardíacas para comparar con señales saludables
+                        mediante ML.</p>
+                </div>
+                <img src="img/comparativa_senales_ECG-MCL.png" alt="ECG Machine Learning" class="project-img large-img">
+            </div>
+        
+            <div class="project-container">
+                <div class="project-info">
+                    <h3>Electrocardiógrafo para pacientes post-COVID 19</h3>
+                    <p><strong>Habilidades:</strong> Arduino, Detección de picos, Análisis comparativo</p>
+                    <p><strong>Objetivo:</strong> Analizar posibles alteraciones eléctricas en el corazón de pacientes
+                        recuperados de COVID-19.</p>
+                </div>
+                <img src="img/Desarrollo_ADS.png" alt="Sensor AD8232" class="project-img large-img">
+            </div>
+        
+            <div class="project-container">
+                <div class="project-info">
+                    <h3>Desarrollo de cuadrúpedo</h3>
+                    <p><strong>Habilidades:</strong> Python, Servomotores, SolidWorks</p>
+                    <p><strong>Objetivo:</strong> Simular el patrón de locomoción de un robot cuadrúpedo.</p>
+                </div>
+                <img src="img/Cuadrupedo_2.jpeg" alt="Cuadrúpedo" class="project-img">
+            </div>
+        
+            <div class="project-container">
+                <div class="project-info">
+                    <h3>Device for the visually impaired people</h3>
+                    <p><strong>Skills:</strong> SolidWorks, Arduino Nano, Diseño de PCB</p>
+                    <p><strong>Main Objective:</strong> Prototype smart glasses with IR sensors for obstacle alert to help
+                        people with myopia.</p>
+                    <p>Más información: <a
+                            href="https://www.instructables.com/This-Proyect-Its-a-Device-for-Visually-Impaired-Pe/"
+                            target="_blank">Instructables</a></p>
+                </div>
+                <img src="img/Lentes_2.jpeg" alt="Dispositivo para personas con discapacidad visual" class="project-img">
+            </div>
+        
+            <div class="project-container">
+                <div class="project-info">
+                    <h3>Prototipo de impresora 3D para extrucción de un solo material</h3>
+                    <p><strong>Habilidades:</strong> SolidWorks, C++, Fabricación de prototipo</p>
+                    <p><strong>Objetivo:</strong> Construir y calibrar una impresora 3D funcional de dimensiones parametrizadas.
+                    </p>
+                </div>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="img/Impresora_1.jpeg" alt="Impresora 1">
+                        <img src="img/Impresora_3.jpeg" alt="Impresora 3">
+                        <img src="img/Impresora_5.jpeg" alt="Impresora 5">
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="prev">></button>
+                        <button class="next"><</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="project-info">
+                    <h3>Prototipo de impresora 3D para extrucción de varios materiales</h3>
+                    <p><strong>Habilidades:</strong> SolidWorks, C++, Fabricación de prototipo, control de motores</p>
+                    <p><strong>Objetivo:</strong> Construir y calibrar una impresora 3D funcional que tenga la opción de cambiar el material que se extruye.
+                    </p>
+                </div>
+                <img src="img/Impresora final.jpeg" alt="Impresora" class="project-img large-img">
+            </div>
+        
+            <div class="project-container">
+                <div class="project-info">
+                    <h3>Clasificación de Arritmias con Redes Neuronales</h3>
+                    <p><strong>Habilidades:</strong> Redes Neuronales, Espectrogramas, Evaluación de modelos</p>
+                    <p><strong>Objetivo:</strong> Clasificar señales cardíacas con CNNs entrenadas en espectrogramas con
+                        ventanas traslapadas.</p>
+                </div>
+                <img src="img/Clasificacion_arritmias_2.png" alt="Clasificación de arritmias" class="project-img large-img">
+            </div>
+        
+            <div class="project-container">
+                <div class="project-info">
+                    <h3>Desarrollo de un método de entrenamiento para el control de una prótesis mioeléctrica para personas con amputación
+                    transradial del miembro superior derecho integrando métodos de Machine Learning</h3>
+                    <p><strong>Habilidades:</strong> Procesamiento de señales, C++, Machine Learning, Diseño de prótesis</p>
+                    <p><strong>Objetivo:</strong> Desarrollar un método de entrenamiento para el control de una prótesis
+                        mioeléctrica para personas con amputación transradial.</p>
+                </div>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="img/MANO_1.png" alt="Prótesis mioeléctrica" class="project-img">
+                        <img src="img/Mano_2.png" alt="Prótesis mioeléctrica_2">
+                        <video autoplay muted loop>
+                            <source src="img/mano.mp4" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de video.
+                        </video>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="prev">></button>
+                        <button class="next"><</button>
+                    </div>
+                </div>
+
+            </div>
+        
+            <div class="project-container">
+                <div class="project-info">
+                    <h3>Rehabilitation glove for post-stroke patients</h3>
+                    <p><strong>Habilidades:</strong> Python, Análisis de movimiento, Servomotores, Análisis de señales</p>
+                    <p><strong>Objective:</strong> Desarrollar un guante de rehabilitación para ejercicios de flexo-extensión en
+                        pacientes con secuelas de EVC.</p>
+                </div>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="img/ortesis_mano.jpeg" alt="Guante de rehabilitación" >
+                        <video autoplay muted loop>
+                            <source src="img/guante.mp4" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de video.
+                        </video>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="prev">></button>
+                        <button class="next"><</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="project-info">
+                    <h3>Development of a prototype of glasses integrating Machine Learning methods for people with Macular Degeneration</h3>
+                    <p><strong>Skills</strong> Python, Signal analysis, Image processing, Proximity sensors</p>
+                    <p><strong>Main Objective:</strong> Develop a prototype of smart glasses with object recognition technology based on YOLOv8 to enhance the independence of
+                    individuals with macular degeneration. These glasses will identify objects in real time and notify the user, optimizing
+                    navigation and interaction with the environment through a parameterized database of common objects.</p>
+                </div>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="img/Lentes_3.jpeg" alt="Guante de rehabilitación">
+                        <img src="img/Lentes_4.jpeg" alt="Guante de rehabilitación">
+                        <img src="img/lentes.jpeg" alt="Guante de rehabilitación">
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="prev">></button>
+                        <button class="next"><</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+          
+          
+            
+        <section id="skills">
+            <h2>🧠 Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> Python, C, C++, Matlab</li>
+                <li><strong>Tools:</strong> Arduino, ESP32, MAX 10 FPGA, Xiao, Raspberry Pi, SolidWorks</li>
+                <li><strong>Areas:</strong> Machine Learning, Biomedical Signal Processing</li>
+                <li><strong>Other skills:</strong> Database management, PCB and circuit building, prototyping,
+                    3D CAD design, teamwork, leadership, adaptability, and time management</li>
+            </ul>
+        </section>
+
+        <section id="languages">
+            <h2 style="text-align: center;">🌐 Languages</h2>
+            <ul style="list-style: none; padding: 0; text-align: center; font-size: 18px;">
+                <li>
+                    <img src="https://flagcdn.com/w40/mx.png" alt="Mexico Flag"
+                        style="vertical-align: middle; width: 30px; margin-right: 10px;">
+                    <strong>Spanish:</strong> Native
+                </li>
+                <li>
+                    <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag"
+                        style="vertical-align: middle; width: 30px; margin-right: 10px;">
+                    <strong>English:</strong> B1</li>
+                <li>
+                    <img src="https://flagcdn.com/w40/fr.png" alt="France Flag"
+                        style="vertical-align: middle; width: 30px; margin-right: 10px;">
+                    <strong>French:</strong> A2</li>
+            </ul>
+        </section>
+            
+        <section id="education">
+            <h2 style="text-align: center;">🎓 Education</h2>
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <td style="vertical-align: top;">
+                        <div class="education-item" style="text-align: center;">
+                            <img src="img/IBERO.png" alt="Universidad Iberoamericana Puebla" class="edu-img"
+                                style="width: 100px;">
+                            <div class="edu-text">
+                                <h3 style="margin: 10px 0;">Biomedical Engineering</h3>
+                                <p>
+                                    <strong>
+                                        <a href="https://www.iberopuebla.mx/" target="_blank">
+                                            Universidad Iberoamericana Puebla
+                                        </a>
+                                    </strong>
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="vertical-align: top;">
+                        <div class="education-item" style="text-align: center;">
+                            <img src="img/Carlos_Gracida.png" alt="Carlos Gracida" class="edu-img" style="width: 100px;">
+                            <div class="edu-text">
+                                <h3 style="margin: 10px 0;">Basic Education</h3>
+                                <p>
+                                    <strong>
+                                        <a href="https://carlosgracida.edu.mx/2/index.html" target="_blank">
+                                            Carlos Gracida
+                                        </a>
+                                    </strong>
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section> 
+
+        <section id="contact">
+            <h2 style="text-align: center;">📬 Contact</h2>
+        
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 20px;">
+                If you want to learn more about my projects, experience, or research lines, feel free to write me an email
+                or visit my social networks below.
+            </p>
+        
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <td style="vertical-align: top;">
+                        <p><strong>Linktree:</strong>
+                            <a href="https://linktr.ee/sebas_eugenio" target="_blank">Sebas_Eugenio</a>
+                        </p>
+                        <a href="https://github.com/user1228-szp" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" style="width: 40px;">
+                        </a>
+                    </td>
+                    <td style="vertical-align: top;">
+                        <p><strong>Email:</strong> sebaseugenio@outlook.com</p>
+                        <a href="https://www.linkedin.com/in/sebas-eugenio/" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"
+                                style="width: 40px;">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</body>
+
+</html>
