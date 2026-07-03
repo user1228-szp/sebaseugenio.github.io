@@ -390,12 +390,12 @@ document.getElementById("previewCount").textContent = project.count;
         }, 3500);
     }
 
-    buttons.forEach(button => {
+   /* buttons.forEach(button => {
         button.addEventListener("mouseenter", () => {
             buttons.forEach(btn => btn.classList.remove("active"));
             button.classList.add("active");
             loadProject(button.dataset.project);
-        });
+        });*/
 
         button.addEventListener("click", () => {
             const link = button.dataset.link;
