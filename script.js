@@ -66,12 +66,12 @@ const explorationProjects = {
         text: "Understanding how intelligent systems perceive the environment through sensing, vision and contextual awareness.",
         objective: "Applied in smart glasses, object recognition and nearby object detection.",
         media: [
-            "img/Lentes_3.jpeg",
-            "img/Lentes_4.jpeg",
-            "img/lentes.jpeg",
-            "img/Evidence_glasses_1.png",
-            "img/Evidence_glasses_3.png",
-            "img/Evidence_glasses_4.png"
+            "img/Lentes/Lentes_3.jpeg",
+            "img/Lentes/Lentes_4.jpeg",
+            "img/Lentes/lentes.jpeg",
+            "img/Lentes/Evidence_glasses_1.png",
+            "img/Lentes/Evidence_glasses_3.png",
+            "img/Lentes/Evidence_glasses_4.png"
         ]
     },
 
@@ -83,9 +83,9 @@ const explorationProjects = {
         text: "Exploring how machine learning can identify meaningful patterns inside biomedical signals.",
         objective: "Applied in ECG analysis, arrhythmia classification and biomedical signal comparison.",
         media: [
-            "img/comparativa_senales_ECG-MCL.png",
-            "img/Clasificacion_arritmias_2.png",
-            "img/Comparativa_senales.png"
+            "img/arritmias/comparativa_senales_ECG-MCL.png",
+            "img/arritmias/Clasificacion_arritmias_2.png",
+            "img/arritmias/Comparativa_senales.png"
         ]
     },
 
@@ -98,12 +98,12 @@ const explorationProjects = {
         objective: "Applied in myoelectric prosthesis research, exoskeleton prototypes and gait simulation.",
         
         media: [
-            "img/MANO_1.png",
-            "img/Mano_2.png",
+            "img/mano/MANO_1.png",
+            "img/mano/Mano_2.png",
             "img/Presentación_final.JPG",
-            "img/Bipedo_1.jpeg",
-            "img/Bipedo_2.jpeg",
-            "video:img/bipedo_video1.mp4"
+            "img/bipedo/Bipedo_1.jpeg",
+            "img/bipedo/Bipedo_2.jpeg",
+            "video:img/bipedo/bipedo_video1.mp4"
         ]
     },
 
@@ -115,12 +115,12 @@ const explorationProjects = {
         text: "Designing systems that create a more natural relationship between users and assistive technologies.",
         objective: "Applied in rehabilitation gloves, orthosis prototypes and wearable medical devices.",
         media: [
-            "img/ortesis_mano.jpeg",
-            "video:img/guante.mp4",
-            "img/kit_ortesis.png",
-            "img/kit_ortesis_2.png",
-            "img/kit_ortesis_3.png",
-            "img/kit_ortesis_4.png"
+            "video:img/guante/guante.mp4",
+            "img/guante/Guante.jpeg",
+            "img/ortesis/kit_ortesis.png",
+            "img/ortesis/kit_ortesis_2.png",
+            "img/ortesis/kit_ortesis_3.png",
+            "img/ortesis/kit_ortesis_4.png"
         ]
     },
 
@@ -132,26 +132,40 @@ const explorationProjects = {
         text: "Combining electronics, mechanics, software and manufacturing into functional engineering systems.",
         objective: "Applied in embedded systems, 3D printer development and automation projects.",
         media: [
-            "img/Impresora_1.jpeg",
-            "img/Impresora_3.jpeg",
-            "img/Impresora_5.jpeg",
-            "img/Impresora final.jpeg"
+            "img/impresoras/Impresora_1.jpeg",
+            "img/impresoras/Impresora_3.jpeg",
+            "img/impresoras/Impresora_5.jpeg",
+            "img/impresoras/Impresora final.jpeg"
         ]
     },
 
-    rehabilitation: {
+    intelligent: {
         number: "06",
         count: "3 Explorations",
-        title: "Healthcare Technologies",
-        subtitle: "Engineering for recovery.",
-        text: "Exploring assistive and medical technologies designed to support recovery, independence and quality of life.",
-        objective: "Applied in orthosis systems, rehabilitation devices and intelligent healthcare prototypes.",
+        title: "Intelligent Systems",
+        subtitle: "Automation, robotics and intelligent control.",
+        text: "Designing automated systems through industrial communication, sensing, robotics and decision logic.",
+        objective: "Applied in smart parking, PLC process control and the PLC–Raspberry Pi–UR automation cell.",
         media: [
-            "img/kit_ortesis.png",
-            "img/kit_ortesis_2.png",
-            "img/kit_ortesis_3.png",
-            "img/kit_ortesis_4.png",
-            "img/ortesis_mano.jpeg"
+            "video:img/molino/sist_molino.mp4",
+            "img/UR/ur_prog.jpeg",
+            "img/molino/PLC_sist.jpeg"
+        ]
+    },
+
+    healthcare: {
+        number: "07",
+        count: "4 Explorations",
+        title: "Healthcare Technologies",
+        subtitle: "Engineering for health and recovery.",
+        text: "Applying multidisciplinary engineering to improve health, rehabilitation, independence and quality of life.",
+        objective: "Applied in ECG systems, smart glasses, rehabilitation gloves and dynamic hand orthoses.",
+        media: [
+            "img/arritmias/Desarrollo_ADS.png",
+            "img/Lentes/Lentes_3.jpeg",
+            "img/Lentes/Lentes_2.jpeg",
+            "img/guante/guante.jpeg",
+            "img/ortesis/kit_ortesis.png"
         ]
     }
 };
