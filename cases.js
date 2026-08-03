@@ -122,18 +122,89 @@ const caseStudies = {
             }
         ],
     },
+
+    "nearby-object-detection": {
+        domainNumber: "01",
+        domain: "Perception",
+        explorationNumber: "02",
+        type: "Engineering Project",
+        year: "2025",
+
+
+        project:
+            "Device for Visually Impaired People",
+
+        title:
+            "Nearby Object Detection",
+
+        subtitle:
+            "A wearable proximity-detection system designed to help visually impaired users identify nearby obstacles through real-time alerts.",
+
+        introduction:
+            "Developed as an assistive technology project, Device for Visually Impaired People explores how wearable sensing can support people with visual disabilities during everyday mobility. The prototype integrates two VL53L0X proximity sensors, an Arduino Nano and an alert system into a pair of glasses, allowing nearby objects to be detected and communicated to the user through an immediate warning.",
+
+        externalLink: {
+            label: "View Instructable",
+            url:
+                "https://www.instructables.com/This-Proyect-Its-a-Device-for-Visually-Impaired-Pe/"
+        },
+
+        technologies: [
+            "Arduino Nano",
+            "VL53L0X",
+            "I2C",
+            "Proximity Sensing",
+            "Wearable Electronics",
+            "3D Printing",
+            "PCB Design"
+        ],
+
+        heroMedia: {
+            type: "image",
+            src: "img/Lentes/Lentes_2.jpeg",
+            alt: "Wearable prototype for visually impaired people"
+        },
+
+        summary: {
+            challenge: [
+                "Visual disability can significantly affect a person's ability to move independently and safely through their surroundings. In Mexico, INEGI reported approximately 7.17 million people with a disability according to the 2020 census, highlighting the importance of developing accessible assistive technologies. ",
+                "The project focused on developing a wearable device capable of detecting nearby obstacles for a user with visual impairment. Based on an initial user interview, comfort, reliability and ease of use were identified as important design considerations. The user particularly emphasized the need for a comfortable frame that would not cause discomfort around the right ear. "
+            ],
+
+            outcome: [
+                "A functional prototype of wearable glasses was developed using two VL53L0X I2C proximity sensors, an Arduino Nano and an alert mechanism. The system was designed to detect objects located near the user and generate an immediate warning when an obstacle was identified. ",
+                "The position of the sensors was modified throughout the development process to improve the interaction between the device and the user. The electronic connections and placement of the circuit were also adapted to make the prototype more comfortable to wear. Materials such as PLA and silicone rubber were considered during the physical development of the device. ",
+                "The resulting prototype provided assistance to a user with visual impairment by generating an alert when nearby objects were detected. The system was intended to reduce uncertainty while walking independently and provide the user with greater confidence during everyday mobility."
+            ]
+        },
+
+        gallery: [
+            {
+                type: "video",
+                category: "Prototype",
+                title: "Results of the wearable prototype",
+                description:
+                    "Result of the test with the wearable prototype for visually impaired people, showing the detection of nearby objects and the corresponding alert.",
+                src: "img/Lentes/LENS.mp4",
+                alt: "Wearable prototype for visually impaired people"
+            },
+            {
+                type: "image",
+                category: "Prototype",
+                title: "Wearable prototype overview",
+                description:
+                    "General view of the wearable device integrating the proximity sensors and electronic system.",
+                src: "img/Lentes/Lentes_1.jpeg",
+                alt: "Wearable prototype for visually impaired people"
+            }
+            
+        ]
+
+
+},
+
 };
 
-/*
- * CASE FLOW
- * The order in which projects appear inside caseStudies is the order used
- * by the "Next Exploration" button.
- *
- * To add another case:
- * 1. Paste the new project object after the previous one.
- * 2. Separate both objects with a comma.
- * 3. No manual "next" property is required.
- */
 const caseOrder = Object.keys(caseStudies);
 
 function getNextProject(projectId) {

@@ -22,18 +22,6 @@ const explorationAreas = {
             {
                 year: "2023",
                 title:
-                    "Device for Visually Impaired People",
-                type:
-                    "Embedded Sensing · Wearable Device",
-                description:
-                    "An assistive prototype that uses proximity sensors to improve environmental awareness.",
-                caseId:
-                    "visual-assistance-device"
-            },
-
-            {
-                year: "2023",
-                title:
                     "Nearby Object Detection",
                 type:
                     "Proximity Detection · Environmental Awareness",
