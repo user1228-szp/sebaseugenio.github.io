@@ -182,27 +182,50 @@ const caseStudies = {
             {
                 type: "video",
                 category: "Prototype",
-                title: "Results of the wearable prototype",
+                title: "Wearable Prototype Test Results",
                 description:
-                    "Result of the test with the wearable prototype for visually impaired people, showing the detection of nearby objects and the corresponding alert.",
+                    "Results from testing the wearable prototype for visually impaired people, showing the detection of nearby objects and the corresponding alert.",
                 src: "img/Lentes/LENS.mp4",
                 alt: "Wearable prototype for visually impaired people"
             },
             {
                 type: "image",
                 category: "Prototype",
-                title: "Wearable prototype overview",
+                title: "Testing the Sensor Position on the Prototype",
+                description:
+                    "Testing the position of the proximity sensor on the wearable prototype for visually impaired people.",
+                src: "img/Lentes/Lentes_7.jpeg",
+                alt: "Wearable prototype for visually impaired people"
+            },
+            {
+                type: "image",
+                category: "Prototype",
+                title: "Prototype Connection Diagram",
+                description:
+                    "Diagram showing the electrical connections between the components of the wearable device.",
+                src: "img/Lentes/Lentes_8.jpeg",
+                alt: "Prototype connection diagram"
+            },
+            {
+                type: "image",
+                category: "Prototype",
+                title: "Prototype Simulation",
+                description:
+                    "Simulation of the wearable device integrating the proximity sensors and electronic system.",
+                src: "img/Lentes/Lentes_9.jpeg",
+                alt: "Simulation of the wearable prototype"
+            },
+            {
+                type: "image",
+                category: "Prototype",
+                title: "Wearable Prototype Overview",
                 description:
                     "General view of the wearable device integrating the proximity sensors and electronic system.",
                 src: "img/Lentes/Lentes_1.jpeg",
                 alt: "Wearable prototype for visually impaired people"
-            }
-            
+            }            
         ]
-
-
-},
-
+    },
 };
 
 const caseOrder = Object.keys(caseStudies);
