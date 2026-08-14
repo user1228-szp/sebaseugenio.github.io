@@ -156,7 +156,10 @@ const caseStudies = {
             "Proximity Sensing",
             "Wearable Electronics",
             "3D Printing",
-            "PCB Design"
+            "PCB Design",
+
+
+            "Instructables"
         ],
 
         heroMedia: {
@@ -194,7 +197,7 @@ const caseStudies = {
                 title: "Testing the Sensor Position on the Prototype",
                 description:
                     "Testing the position of the proximity sensor on the wearable prototype for visually impaired people.",
-                src: "img/Lentes/Lentes_7.jpeg",
+                src: "img/Lentes/Lentes_7.jpg",
                 alt: "Wearable prototype for visually impaired people"
             },
             {
@@ -203,7 +206,7 @@ const caseStudies = {
                 title: "Prototype Connection Diagram",
                 description:
                     "Diagram showing the electrical connections between the components of the wearable device.",
-                src: "img/Lentes/Lentes_8.jpeg",
+                src: "img/Lentes/Lentes_8.jpg",
                 alt: "Prototype connection diagram"
             },
             {
@@ -212,7 +215,7 @@ const caseStudies = {
                 title: "Prototype Simulation",
                 description:
                     "Simulation of the wearable device integrating the proximity sensors and electronic system.",
-                src: "img/Lentes/Lentes_9.jpeg",
+                src: "img/Lentes/Lentes_9.jpg",
                 alt: "Simulation of the wearable prototype"
             },
             {
@@ -226,6 +229,368 @@ const caseStudies = {
             }            
         ]
     },
+
+    "post-covid-ecg": {
+        domainNumber: "02",
+        domain: "Learning",
+        explorationNumber: "01",
+        type: "Research Project",
+        year: "2021",
+
+        project:
+            "Development of an Electrocardiograph for Post-COVID-19 Cardiac Activity Analysis",
+
+        title:
+            "Analyzing Cardiac Activity After COVID-19",
+
+        subtitle:
+            "A portable electrocardiography system developed to acquire, record and analyze cardiac electrical activity in people recovering from COVID-19.",
+
+        introduction:
+            "This project focused on developing an electrocardiograph capable of capturing, recording and visualizing the electrical activity of the heart in people recovering from COVID-19. The system combined an AD8232 sensor, an Arduino UNO and Python-based data acquisition with MATLAB-based signal analysis.",
+
+        technologies: [
+            "Arduino UNO",
+            "AD8232",
+            "Python",
+            "MATLAB",
+            "ECG Signal Processing"
+        ],
+
+        heroMedia: {
+            type: "image",
+            src: "img/arritmias/AD8232.jpg",
+            alt: "Post-COVID-19 electrocardiograph prototype"
+        },
+
+        summary: {
+            challenge: [
+                "The project aimed to analyze possible alterations in cardiac electrical activity in people recovering from COVID-19.",
+                "A portable electrocardiograph was required to acquire and store ECG signals while providing a practical electrode configuration for the participants."
+            ],
+
+            approach: [
+                "An electrocardiograph was developed using an AD8232 sensor connected to an Arduino UNO.",
+                "Python was used to acquire and store the recorded electrical signals in CSV files.",
+                "Three electrode configurations were evaluated to determine which arrangement provided the clearest signal and the most practical setup for data acquisition.",
+                "The recorded signals were subsequently analyzed using MATLAB to identify the main ECG components and calculate cardiac signal characteristics."
+            ],
+
+            outcome: [
+                "A total of 43 subjects were recruited, of which 30 samples were ultimately analyzed.",
+                "The selected electrode configuration used the wrists and right thigh and provided the clearest ECG signal while being more comfortable for the participants.",
+                "The MATLAB analysis identified the P wave, QRS complex and T wave in the recorded signals.",
+                "The average of the analyzed samples produced a heart rate of 1.35 beats per second and an average signal amplitude of 3.034 V.",
+                "The project concluded that the developed electrocardiograph was able to acquire and analyze ECG signals, although improvements in sampling and filtering would be required for more rigorous future analysis."
+            ]
+        },
+
+        gallery: [
+            {
+                type: "image",
+                category: "Prototype",
+                title: "Prototype Overview",
+                description:
+                    "Prototype of the portable electrocardiograph developed for post-COVID-19 cardiac activity analysis.",
+                src: "img/arritmias/Desarrollo_ADS.png",
+                alt: "Prototype of the portable electrocardiograph"
+            },
+            {
+                type: "image",
+                category: "Prototype",
+                title: "Configuration of the electrodes",
+                description:
+                    "Different electrode configurations tested for optimal ECG signal acquisition.",
+                src: "img/arritmias/connection_ECG.jpg",
+                alt: "Configuration of the electrodes for ECG signal acquisition"
+            },
+            {
+                type: "image",
+                category: "Prototype",
+                title: "Signal acquisition and analysis from the A configuration",
+                description:
+                    "Result of the ECG signal acquisition and analysis using the A electrode configuration.",
+                src: "img/arritmias/config_A.jpg",
+                alt: "A configuration of the electrodes for ECG signal acquisition"
+            },
+            {
+                type: "image",
+                category: "Prototype",
+                title: "Signal acquisition and analysis from the B configuration",
+                description:
+                    "Result of the ECG signal acquisition and analysis using the B electrode configuration.",
+                src: "img/arritmias/config_B.jpg",
+                alt: "B configuration of the electrodes for ECG signal acquisition"
+            },
+            {
+                type: "image",
+                category: "Prototype",
+                title: "Signal acquisition and analysis from the C configuration",
+                description:
+                    "Result of the ECG signal acquisition and analysis using the C electrode configuration.",
+                src: "img/arritmias/config_C.jpg",
+                alt: "C configuration of the electrodes for ECG signal acquisition"
+            },
+            {
+                type: "image",
+                category: "Prototype",
+                title: "Estadistic Analysis of the Signal",
+                description:
+                    "Result of the estadistic analsis of the ECG signal acquisition and analysis.",
+                src: "img/arritmias/signal.jpg",
+                alt: "Result of the estadistic analsis of the ECG signal acquisition and analysis"
+            },
+        ]
+        },
+
+        "ecg-prototype-verification": {
+            domainNumber: "02",
+            domain: "Learning",
+            explorationNumber: "02",
+            type: "Research Project",
+            year: "2022",
+
+            project:
+                "Development of Mathematical Software for ECG Analysis and Prototype Verification",
+
+            title:
+                "Verifying ECG Signals Through Computational Analysis",
+
+            subtitle:
+                "A MATLAB-based signal processing system developed to filter, analyze and verify ECG recordings from a custom electrocardiograph prototype.",
+
+            introduction:
+                "This project focused on developing mathematical software in MATLAB to process ECG signals and verify the operation of a custom electrocardiograph prototype using an AD8232 sensor. The software was designed to filter the acquired signals, analyze their frequency characteristics and identify relevant ECG peaks and valleys.",
+
+            technologies: [
+                "MATLAB",
+                "AD8232",
+                "ATmega328P",
+                "MicroSD",
+                "SPI",
+                "ECG Signal Processing",
+                "Low-Pass Filtering",
+                "Savitzky-Golay Filtering",
+                "Fourier Transform"
+            ],
+
+            heroMedia: {
+                type: "image",
+                src: "prototype_matlab.jpg",
+                alt: "prototype verification and ECG signal analysis using MATLAB"
+            },
+
+            summary: {
+                challenge: [
+                    "The project required a computational method capable of processing ECG recordings and evaluating the operation of a custom electrocardiograph prototype.",
+                    "The acquired signals contained interference that could affect the identification and comparison of relevant ECG features."
+                ],
+
+                approach: [
+                    "A custom ECG acquisition system was developed using an AD8232 sensor, an ATmega328P microcontroller and a MicroSD storage module.",
+                    "The recorded signals were processed in MATLAB using a low-pass filter to remove the 60 Hz interference associated with the electrical supply.",
+                    "A seventh-degree Savitzky-Golay filter was applied to smooth the signal while preserving its characteristics.",
+                    "Fourier analysis was used to examine the frequency spectrum, while maximum and minimum points were identified to analyze the QRS complex.",
+                    "The software was also designed to compare two ECG recordings and calculate the standard deviation between their detected peaks."
+                ],
+
+                outcome: [
+                    "The developed software successfully generated the original, filtered and aligned ECG signals, frequency spectra and detected maximum and minimum points.",
+                    "The analysis produced a 6.9% standard deviation when comparing the detected peaks of two ECG signals.",
+                    "The software successfully performed the programmed analysis tasks across different ECG recordings.",
+                    "The study concluded that the prototype should not be used for clinical diagnosis because its sampling precision and signal interference produced deviations beyond the required range."
+                ]
+            },
+
+            gallery: [
+                {
+                    type: "image",
+                    category: "Prototype",
+                    title: "Conection Diagram of the Prototype",
+                    description:
+                        "Diagram showing the electrical connections between the components of the electrocardiograph prototype.",
+                    src: "img/arritmias/Matlab_1.jpg",
+                    alt: "Connection diagram of the electrocardiograph prototype"
+                },
+                {
+                    type: "image",
+                    category: "Prototype",
+                    title: "Comparative of the ECG Signals",
+                    description:
+                    "Superimposed electrical signals from the heart, allowing for the observation of the signal's standard deviation.",
+                    src: "img/arritmias/signals_matlab1.jpg",
+                    alt: "Comparative of the ECG signals"
+                },
+                {
+                    type: "image",
+                    category: "Prototype",
+                    title: "power spectrum of the ECG signals",
+                    description:
+                        "Elimination of the 60 Hz spike from the ECG signal using a low-pass filter and a Savitzky-Golay filter.",
+                    src: "img/arritmias/signals_matlab.jpg",
+                    alt: "Power spectrum of the ECG signals"
+                },
+                {
+                    type: "image",
+                    category: "Prototype",
+                    title: "Analysis of the ECG signals",
+                    description:
+                        "Analysis of the ECG signals using MATLAB.",
+                    src: "img/arritmias/analisis_matlab.jpg",
+                    alt: "Analysis of the ECG signals"
+                }, 
+                {
+                    type: "image",
+                    category: "Prototype",
+                    title: "result of the analysis of the ECG signals",
+                    description:
+                        "Result of the analysis of the ECG signals using MATLAB, showing the detected peaks and valleys.",
+                    src: "img/arritmias/result_matlab.jpg",
+                    alt: "Result of the analysis of the ECG signals"
+                },
+            ]
+        },
+
+        "ecg-signal-analysis-machine-learning": {
+            domainNumber: "02",
+            domain: "Learning",
+            explorationNumber: "03",
+            type: "Research Project",
+            year: "2023",
+
+            project:
+                "ECG Signal Analysis Using Machine Learning",
+
+            title:
+                "Learning to Analyze ECG Signals",
+
+            subtitle:
+                "A machine learning approach for processing and classifying electrocardiographic signals for subsequent cardiac analysis.",
+
+            introduction:
+                "This project explored the use of machine learning to analyze electrocardiographic signals. A portable ECG acquisition system was combined with digital signal processing and a convolutional neural network to classify signals according to their suitability for subsequent heart-rate analysis.",
+
+            technologies: [
+                "Python",
+                "Machine Learning",
+                "Convolutional Neural Networks",
+                "Arduino UNO",
+                "AD8232",
+                "ECG Signal Processing",
+                "Low-Pass Filtering",
+                "Savitzky-Golay Filtering",
+                "Fourier Transform"
+            ],
+
+            heroMedia: {
+                type: "image",
+                src: "img/arritmias/ECG.jpg",
+                alt: "ECG signal analysis using machine learning"
+            },
+
+            summary: {
+                challenge: [
+                    "ECG recordings can contain interference and signal segments that are not suitable for subsequent analysis.",
+                    "The project investigated whether a machine learning model could identify ECG signals that were suitable for further heart-rate analysis."
+                ],
+
+                approach: [
+                    "An ECG acquisition system was developed using an AD8232 sensor connected to an Arduino UNO.",
+                    "Python was used to acquire and store the sampled ECG signals.",
+                    "A low-pass filter was applied to remove the 60 Hz interference, followed by Savitzky-Golay filtering to smooth the signal.",
+                    "The processed signal was transformed into a frequency spectrogram using the Fourier transform.",
+                    "The resulting spectrograms were used to train a convolutional neural network for signal classification."
+                ],
+
+                outcome: [
+                    "The neural network was trained to recognize two types of signals: signals suitable for subsequent heart-rate analysis and signals unsuitable for further analysis.",
+                    "The machine learning classification achieved an accuracy of 86.44%."
+                ]
+            },
+
+            gallery: [
+                {
+                    type: "image",
+                    category: "Prototype",
+                    title: "Adquisition of the ECG signals",
+                    description:
+                        "Acquisition of the ECG signals using the developed prototype.",
+                    src: "img/arritmias/acquisition.png",
+                    alt: "Acquisition of the ECG signals using the developed prototype."
+                },
+                {
+                    type: "image",
+                    category: "Prototype",
+                    title: "Connection of the ECG Sensor",
+                    description:
+                        "Connection of the ECG sensor to the Arduino UNO for signal acquisition.",
+                    src: "img/arritmias/connection_ECG.jpg",
+                    alt: "Connection of the ECG sensor to the Arduino UNO for signal acquisition."
+                },
+            ]
+        },
+
+        "low-complexity-myoelectric-control": {
+            domainNumber: "02",
+            domain: "Learning",
+            explorationNumber: "04",
+            type: "Research & Development Project",
+            year: "2025",
+                
+            project:
+                "Low-Complexity Myoelectric Control for Transradial Prostheses",
+
+            title:
+                "Learning Human Movement from Myoelectric Signals",
+
+            subtitle:
+                "A low-complexity machine learning approach for recognizing functional hand movements through myoelectric signals and applying them to prosthetic control.",
+
+            introduction:
+                "This project evaluated a control method for a myoelectric prosthesis intended for people with transradial amputation of the right upper limb. The approach uses low-complexity classification algorithms to recognize functional hand movements from electromyographic signals and establish a control interface between the classifier and a prosthetic hand.",
+
+            technologies: [
+                "Surface EMG",
+                "Machine Learning",
+                "MLP",
+                "Signal Processing",
+                "Feature Extraction",
+                "Arduino UNO",
+                "Raspberry Pi",
+                "3D Printing"
+            ],
+
+            heroMedia: {
+                type: "image",
+                src: "",
+                alt: "Myoelectric transradial prosthesis prototype"
+            },
+
+            summary: {
+                challenge: [
+                    "Myoelectric prostheses must interpret muscular activity and translate it into functional movements. The project focused on evaluating a low-complexity classification approach for recognizing hand movements.",
+                    "The system was designed to provide an accessible control method while reducing the complexity associated with conventional myoelectric control approaches."
+                ],
+
+                approach: [
+                    "Surface electromyographic signals were acquired to capture muscular activity associated with intended hand movements.",
+                    "Signal processing and feature extraction techniques were applied to prepare the myoelectric data for classification.",
+                    "A machine learning classification model was trained to recognize functional movement patterns from the acquired signals.",
+                    "The project proposed an interface between the classifier and a prosthetic hand and considered the recognition of seven functional hand movements.",
+                    "A transradial prosthetic hand prototype was developed using 3D-printed PLA components."
+                ],
+
+                outcome: [
+                    "A 3D-printed transradial prosthetic hand prototype was developed using PLA.",
+                    "The project demonstrated the feasibility of implementing a non-invasive myoelectric control system based on machine learning.",
+                    "The MLP model demonstrated stable performance and discriminative capability when processing new signals for multiclass myoelectric pattern recognition.",
+                    "The results established the potential of the approach for recognizing functional hand movements and integrating machine learning with prosthetic control."
+                ]
+            },
+
+            gallery: []
+            },
+
 };
 
 const caseOrder = Object.keys(caseStudies);
@@ -283,19 +648,37 @@ function renderParagraphs(paragraphs) {
         .join("");
 }
 
-function renderTechnologies(technologies) {
+function renderTechnologies(technologies, externalLink) {
     if (!Array.isArray(technologies)) {
         return "";
     }
 
     return technologies
-        .map(
-            (technology) => `
+        .map((technology) => {
+
+            if (
+                technology === "Instructables" &&
+                externalLink &&
+                externalLink.url
+            ) {
+                return `
+                    <a
+                        class="case-technology case-technology-link"
+                        href="${escapeHTML(externalLink.url)}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        ${escapeHTML(technology)}
+                    </a>
+                `;
+            }
+
+            return `
                 <span class="case-technology">
                     ${escapeHTML(technology)}
                 </span>
-            `
-        )
+            `;
+        })
         .join("");
 }
 
