@@ -126,6 +126,17 @@ body.lightbox-open {
     letter-spacing: 0.03em;
 }
 
+.case-technology-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.case-technology-link:hover {
+    text-decoration: underline;
+}
+
+
 .case-hero-media {
     position: relative;
     overflow: hidden;

@@ -130,13 +130,10 @@ const caseStudies = {
         type: "Engineering Project",
         year: "2025",
 
-
         project:
             "Device for Visually Impaired People",
-
         title:
             "Nearby Object Detection",
-
         subtitle:
             "A wearable proximity-detection system designed to help visually impaired users identify nearby obstacles through real-time alerts.",
 
@@ -230,7 +227,7 @@ const caseStudies = {
         ]
     },
 
-    "post-covid-ecg": {
+    "ECG Signal Analysis Using Machine Learning": {
         domainNumber: "02",
         domain: "Learning",
         explorationNumber: "01",
@@ -910,7 +907,7 @@ function renderCaseStudy(project) {
                             </p>
 
                             <div class="case-technologies">
-                                ${renderTechnologies(project.technologies)}
+                                ${renderTechnologies(project.technologies, project.externalLink)}
                             </div>
                         </div>
 
