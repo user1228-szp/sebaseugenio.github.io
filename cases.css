@@ -125,15 +125,34 @@ body.lightbox-open {
     font-weight: 500;
     letter-spacing: 0.03em;
 }
-
 .case-technology-link {
     text-decoration: none;
-    color: inherit;
+    color: var(--accent-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
     cursor: pointer;
+    transition:
+        color 0.2s ease,
+        opacity 0.2s ease,
+        transform 0.2s ease;
 }
 
 .case-technology-link:hover {
-    text-decoration: underline;
+    opacity: 0.75;
+    transform: translateY(-1px);
+}
+
+.external-link-icon {
+    display: inline-block;
+    margin-left: 0.15em;
+    font-size: 0.85em;
+    font-weight: 700;
+    transition: transform 0.2s ease;
+}
+
+.case-technology-link:hover .external-link-icon {
+    transform: translate(2px, -2px);
 }
 
 

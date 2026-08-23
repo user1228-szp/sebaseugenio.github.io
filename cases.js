@@ -664,8 +664,10 @@ function renderTechnologies(technologies, externalLink) {
                         href="${escapeHTML(externalLink.url)}"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Open Instructables project"
                     >
                         ${escapeHTML(technology)}
+                        <span class="external-link-icon" aria-hidden="true">↗</span>
                     </a>
                 `;
             }
