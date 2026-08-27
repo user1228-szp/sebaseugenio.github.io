@@ -467,6 +467,11 @@ const caseStudies = {
             introduction:
                 "This project explored the use of machine learning to analyze electrocardiographic signals. A portable ECG acquisition system was combined with digital signal processing and a convolutional neural network to classify signals according to their suitability for subsequent heart-rate analysis.",
 
+            github: {
+                url: "https://github.com/user1228-szp/NOMBRE-DEL-REPOSITORIO",
+                label: "View on GitHub"
+            },
+            
             technologies: [
                 "Python",
                 "Machine Learning",
