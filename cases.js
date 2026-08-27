@@ -373,7 +373,7 @@ const caseStudies = {
 
             heroMedia: {
                 type: "image",
-                src: "prototype_matlab.jpg",
+                src: "img/arritmias/prototype_matlab.jpg",
                 alt: "prototype verification and ECG signal analysis using MATLAB"
             },
 
@@ -685,7 +685,7 @@ function renderHeroMedia(media) {
     if (!media || !media.src) {
         return `
             <div class="case-hero-placeholder">
-                Add the principal project image in cases.js
+                Error, load again the page
             </div>
         `;
     }
